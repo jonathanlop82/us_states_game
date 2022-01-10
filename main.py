@@ -38,6 +38,8 @@ while not game_over:
             new_state.write("YOU WIN", font=FONT)
         record.append(answer_state)
         continue
+    elif answer_state == "exit":
+        break
     else:
         continue
 
