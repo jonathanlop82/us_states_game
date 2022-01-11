@@ -39,6 +39,8 @@ while not game_over:
         record.append(answer_state)
         continue
     elif answer_state == "exit":
+        missing_states = [st for st in state if st not in record]
+        print(missing_states)
         break
     else:
         continue
